@@ -6,4 +6,4 @@ You can use a script manager such as [**Greasemonkey**](https://www.greasespot.n
 
 ## AI Disclosure
 
-Some of these scripts were developed with the assistance of **Large Language Models (LLMs)**, used as helpers for code writing and optimization.
+Some of these scripts were developed with the assistance of **LLMs**, used as helpers for code writing and optimization.
