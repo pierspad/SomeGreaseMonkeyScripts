@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Widen ChatGPT UI
+// @name         Full-Width ChatGPT UI
 // @namespace    https://pierspad.com
-// @version      1.0
-// @description  Enlarge the central box on ChatGPT, leaving space at the edges.
+// @version      1.1
+// @description  Usa tutto lo spazio orizzontale per ChatGPT.
 // @match        https://chatgpt.com/*
 // @match        https://chat.openai.com/*
 // @grant        none
@@ -12,27 +12,31 @@
 (function () {
   const css = `
 :root{
-  --gpt-wide-max: 1400px;   /* absolute limit */
-  --gpt-wide-vw: 92vw;      /* leave ~4% on each side */
+  --gpt-side-margin: 2vw; /* spazio laterale minimo */
 }
 
 #main .mx-auto,
 #main [class*="max-w-"],
 main .mx-auto,
 main [class*="max-w-"]{
-  max-width: min(var(--gpt-wide-max), var(--gpt-wide-vw)) !important;
+  max-width: none !important;
+  width: calc(100% - 2 * var(--gpt-side-margin)) !important;
+  margin-left: var(--gpt-side-margin) !important;
+  margin-right: var(--gpt-side-margin) !important;
 }
 
 #main [data-testid="conversation-turns"],
 #main [data-testid="composer"],
 #main form{
-  max-width: min(var(--gpt-wide-max), var(--gpt-wide-vw)) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-width: none !important;
+  width: calc(100% - 2 * var(--gpt-side-margin)) !important;
+  margin-left: var(--gpt-side-margin) !important;
+  margin-right: var(--gpt-side-margin) !important;
 }
 
 #main [style*="max-width"]{
-  max-width: min(var(--gpt-wide-max), var(--gpt-wide-vw)) !important;
+  max-width: none !important;
+  width: calc(100% - 2 * var(--gpt-side-margin)) !important;
 }
 `;
   const style = document.createElement('style');
