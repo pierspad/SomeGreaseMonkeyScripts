@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         Widen Claude UI (Full Width)
 // @namespace    https://pierspad.com
+// @author       https://pierspad.com
 // @version      1.1
 // @description  Expand the central box on claude.ai while maintaining a side margin
 // @match        https://claude.ai/*

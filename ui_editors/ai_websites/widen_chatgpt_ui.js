@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         Full-Width ChatGPT UI
 // @namespace    https://pierspad.com
+// @author       https://pierspad.com
 // @version      1.1
 // @description  Usa tutto lo spazio orizzontale per ChatGPT.
 // @match        https://chatgpt.com/*
