@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name         Gemini Navigation Dots
+// @namespace    https://pierspad.com
+// @author       https://pierspad.com
+// @version      1.0
+// @description  Added navigation dots to Gemini conversations for easier navigation (compatible with Auto-Scroll Blocker)
+// @match        https://gemini.google.com/*
+// @grant        none
+// @run-at       document-start
+// ==/UserScript==
+
+
 (function() {
     'use strict';
 
